@@ -1,0 +1,54 @@
+#wrapper{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+#content{
+
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 800px;
+    height: 100%;
+    position: relative;
+}
+img{
+
+
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-top: 20px;
+
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 768px) {
+    #content{width: 100%;
+    margin-left: -4%;
+    margin-right: 0%;
+
+    }
+    img{
+
+        margin-right: 0%;
+        margin-left: 0%;
+
+        width: 100%;
+    }
+
+  }
+
+  @keyframes background-fader {
+    0%   {background-color: #2B0900}
+    100% {background-color: white}
+  }

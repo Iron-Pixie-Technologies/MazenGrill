@@ -1,0 +1,124 @@
+#title{
+    position: absolute;
+    left: 1%;
+    margin: 0px;
+    text-decoration: none;
+    top: 20px;
+    font-size: 30px;
+    font-style: bold;
+    color: inherit;
+
+}
+
+
+#homenav{
+    position: absolute;
+    right: 140px;
+    top: 20px;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+#menunav{
+    width: 100px;
+    position: absolute;
+    right: 10px;
+
+    text-decoration: none;
+    top: 20px;
+    color: inherit;
+
+}
+#aboutnav{
+    width: 130px;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    top: 20px;
+    color: inherit;
+}
+#waitrnav{
+    width: 170px;
+    height:100px;
+    position: absolute;
+    right: 24px;
+    background-image: url("src\assets\WAITRGRAPHIC.png");
+    background-position: center center;
+    display: block;
+    background-size: contain;
+    text-align: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    top: 120px;
+    color: inherit;
+}
+#homenav:hover{
+    animation-name: over;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    color: orange;
+}
+#menunav:hover{
+    animation-name: over;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    color: orange;
+}
+#aboutnav:hover{
+    animation-name: over;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    color: orange;
+}
+#navi{
+    width: 100%;
+    height: 0px;
+    font-family: Georgia, serif;
+    margin-top: 20px;
+}
+.notmenu{
+    color: #b9b9b9;
+}
+.ismenu{
+    color: rgb(97, 23, 4);
+}
+h2{
+    margin: 0px;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@keyframes over {
+    0%   {color: inherit;}
+    100% {color: orange;}
+  }
+  @keyframes appear {
+    0%   {opacity: 0;
+    margin-top: 0px;}
+    100% {opacity: 1;
+    margin-top: 20px;}
+  }
+
+  @media (max-width: 868px) {
+    button{display: inline-block;}
+    #dropdown {display: inline-block;}
+    #normal{display: none;}
+    #title{font-size: 20px;}
+    #waitrnav{top: 50px;}
+
+  }

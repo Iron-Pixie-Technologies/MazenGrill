@@ -1,0 +1,19 @@
+<div 
+[ngClass]="{
+  'notmenu': makechange,
+  'ismenu': change
+
+}"
+id="navi"><a id="title" href="">MAZEN GRILL LAFAYETTE</a>
+<div id="normal">
+  <h2><a id="homenav" (click)="changeToFalse()" routerLink="">Home</a></h2>
+  <h2><a id="menunav" (click)="changeToTrue()" routerLink="menu">Menu</a></h2>
+</div></div>
+<div id="dropdown">
+  <button mat-raised-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+<mat-menu #menu="matMenu">
+  <a   (click)="changeToFalse()" routerLink="" mat-menu-item>Home</a>
+  <a   (click)="changeToTrue()" routerLink="menu" mat-menu-item>Menu</a>
+</mat-menu>
+</div>
+<h2><a id="waitrnav" href="https://waitrapp.com/restaurants/la/lafayette/mazen-grill/637"  target="_blank" ></a></h2>
